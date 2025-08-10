@@ -1,12 +1,40 @@
-# React + Vite
+# Prescripto Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend for the Prescripto Doctor Appointment Booking System.
 
-Currently, two official plugins are available:
+## Environment Configuration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Local Development
+The app will automatically use `http://localhost:3000/api` as the backend URL.
 
-## Expanding the ESLint configuration
+### Production Deployment
+Set the following environment variables in your deployment platform (e.g., Vercel):
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+VITE_API_URL=https://your-backend-url.com/api
+VITE_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+```
+
+**Important:** Replace `your-backend-url.com` with your actual backend deployment URL.
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## Features
+
+- User authentication (login/signup)
+- Doctor browsing and selection
+- Appointment booking with Stripe payment
+- User profile management
+- Responsive design
+
+## Tech Stack
+
+- React 18
+- Vite
+- Axios for API calls
+- Stripe for payments
+- CSS for styling
